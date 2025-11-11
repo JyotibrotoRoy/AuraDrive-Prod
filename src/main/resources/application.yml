@@ -1,0 +1,27 @@
+spring:
+  data:
+    redis:
+      uri: ${REDIS_URI}
+
+    mongodb:
+      uri: mongodb+srv://jyotibroto:r4SueinFPv8A6zou@cluster0.g0u0zvg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: AuraDB
+      auto-index-creation: true
+
+
+  cloud:
+    aws:
+      region:
+        static: ap-south-1
+      credentials:
+        access-key: ${AWS_ACCESS_KEY_ID}
+        secret-key: ${AWS_SECRET_ACCESS_KEY}
+
+
+s3:
+  bucket:
+    name: auradrive-documents-roy
+
+jwt:
+    secret:
+        key: ${JWT_SECRET_KEY}
